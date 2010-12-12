@@ -1,0 +1,87 @@
+<?php
+/**
+ * Zend Framework
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://framework.zend.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@zend.com so we can send you a copy immediately.
+ *
+ * @category   Zend
+ * @package    Zend_Pdf
+ * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: Boolean.php 20096 2010-01-06 02:05:09Z bkarwin $
+ */
+
+/**
+ * @namespace
+ */
+namespace Zend\Pdf\Element;
+
+/** Zend_Pdf_Element */
+require_once 'Zend/Pdf/Element.php';
+
+
+/**
+ * PDF file 'boolean' element implementation
+ *
+ * @category   Zend
+ * @package    Zend_Pdf
+ * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ */
+class Boolean extends Element
+{
+    /**
+     * Object value
+     *
+     * @var boolean
+     */
+    public $value;
+
+
+    /**
+     * Object constructor
+     *
+     * @param boolean $val
+     * @throws Zend_Pdf_Exception
+     */
+    public function __construct($val)
+    {
+        if (! is_bool($val)) {
+            require_once 'Zend/Pdf/Exception.php';
+            throw new \Zend\Pdf\Exception('Argument must be boolean.');
+        }
+
+        $this->value   = $val;
+    }
+
+
+    /**
+     * Return type of the element.
+     *
+     * @return integer
+     */
+    public function getType()
+    {
+        return Element::TYPE_BOOL;
+    }
+
+
+    /**
+     * Return object as string
+     *
+     * @param Zend_Pdf_Factory $factory
+     * @return string
+     */
+    public function toString($factory = null)
+    {
+        return $this->value ? 'true' : 'false';
+    }
+}
