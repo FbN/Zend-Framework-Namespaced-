@@ -87,7 +87,7 @@ class Priority extends AbstractFilter
             $config['priority'] = constant($config['priority']);
         }
 
-        return new \self(
+        return new self(
             (int) $config['priority'], 
             $config['operator']
         );

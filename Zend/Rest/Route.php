@@ -112,7 +112,7 @@ class Route extends Controller\Router\Route\Module
         		$restfulConfigArray[$key] = explode(',', $values);
         	}
         }
-        $instance = new \self($frontController, $defaultsArray, $restfulConfigArray);
+        $instance = new self($frontController, $defaultsArray, $restfulConfigArray);
         return $instance;
     }
 

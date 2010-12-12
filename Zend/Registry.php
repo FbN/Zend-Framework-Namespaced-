@@ -86,7 +86,7 @@ class Registry extends \ArrayObject
      */
     protected static function init()
     {
-        self::setInstance(new \self::$_registryClassName());
+        self::setInstance(new self::$_registryClassName());
     }
 
     /**

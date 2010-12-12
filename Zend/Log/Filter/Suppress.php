@@ -77,6 +77,6 @@ class Suppress extends AbstractFilter
      */
     static public function factory($config)
     {
-        return new \self();
+        return new self();
     }
 }

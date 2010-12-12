@@ -57,7 +57,7 @@ class Return extends Tag
      */
     public static function fromReflection(\Zend\Reflection\Docblock\Tag\Tag $reflectionTagReturn)
     {
-        $returnTag = new \self();
+        $returnTag = new self();
 
         $returnTag->setName('return');
         $returnTag->setDatatype($reflectionTagReturn->getType()); // @todo rename

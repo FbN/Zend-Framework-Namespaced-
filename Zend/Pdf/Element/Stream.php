@@ -118,7 +118,7 @@ class Stream extends Element
      */
     public function makeClone(actory\ElementFactory $factory, array &$processed, $mode)
     {
-        return new \self($this->value->getRef());
+        return new self($this->value->getRef());
     }
 
     /**

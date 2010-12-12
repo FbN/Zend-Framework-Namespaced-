@@ -75,7 +75,7 @@ class Schema extends Ldap\Node\AbstractNode
                 return new OpenLdap($dn, $data, $ldap);
             case RootDse\RootDse::SERVER_TYPE_EDIRECTORY:
             default:
-                return new \self($dn, $data, $ldap);
+                return new self($dn, $data, $ldap);
         }
     }
 

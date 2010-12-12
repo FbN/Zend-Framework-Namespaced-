@@ -78,7 +78,7 @@ class RootDse extends Ldap\Node\AbstractNode
             require_once 'Zend/Ldap/Node/RootDse/OpenLdap.php';
             return new OpenLdap($dn, $data);
         } else {
-            return new \self($dn, $data);
+            return new self($dn, $data);
         }
     }
 

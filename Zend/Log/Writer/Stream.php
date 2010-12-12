@@ -105,7 +105,7 @@ class Stream extends AbstractWriter
 
         $streamOrUrl = isset($config['url']) ? $config['url'] : $config['stream']; 
         
-        return new \self(
+        return new self(
             $streamOrUrl, 
             $config['mode']
         );

@@ -56,7 +56,7 @@ class Regex extends AbstractRoute
         $defs = ($config->defaults instanceof Config\Config) ? $config->defaults->toArray() : array();
         $map = ($config->map instanceof Config\Config) ? $config->map->toArray() : array();
         $reverse = (isset($config->reverse)) ? $config->reverse : null;
-        return new \self($config->route, $defs, $map, $reverse);
+        return new self($config->route, $defs, $map, $reverse);
     }
 
     public function __construct($route, $defaults = array(), $map = array(), $reverse = null)

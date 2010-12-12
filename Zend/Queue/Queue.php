@@ -361,7 +361,7 @@ class Queue implements \Countable
             'timeout'   => $timeout
         );
 
-        return new \self($this->getAdapter(), $options);
+        return new self($this->getAdapter(), $options);
     }
 
     /**

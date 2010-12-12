@@ -73,7 +73,7 @@ class Registry
         if (end\Registry::isRegistered(self::REGISTRY_KEY)) {
             $registry = end\Registry::get(self::REGISTRY_KEY);
         } else {
-            $registry = new \self();
+            $registry = new self();
             end\Registry::set(self::REGISTRY_KEY, $registry);
         }
 

@@ -152,7 +152,7 @@ class Route extends AbstractRoute
     {
         $reqs = ($config->reqs instanceof Config\Config) ? $config->reqs->toArray() : array();
         $defs = ($config->defaults instanceof Config\Config) ? $config->defaults->toArray() : array();
-        return new \self($config->route, $defs, $reqs);
+        return new self($config->route, $defs, $reqs);
     }
 
     /**

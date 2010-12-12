@@ -62,7 +62,7 @@ class Property extends \Zend\CodeGenerator\Php\Member\AbstractMember
      */
     public static function fromReflection(\Zend\Reflection\Property $reflectionProperty)
     {
-        $property = new \self();
+        $property = new self();
 
         $property->setName($reflectionProperty->getName());
 

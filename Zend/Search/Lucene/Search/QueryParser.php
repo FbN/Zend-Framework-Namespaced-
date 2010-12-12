@@ -270,7 +270,7 @@ class QueryParser extends Lucene\FSM
     private static function _getInstance()
     {
         if (self::$_instance === null) {
-            self::$_instance = new \self();
+            self::$_instance = new self();
         }
         return self::$_instance;
     }

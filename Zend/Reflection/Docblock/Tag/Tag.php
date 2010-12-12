@@ -77,7 +77,7 @@ class Tag implements \Reflector
             }
             return new $tagClass($tagDocblockLine);
         }
-        return new \self($tagDocblockLine);
+        return new self($tagDocblockLine);
     }
 
     /**

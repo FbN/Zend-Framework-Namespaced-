@@ -128,7 +128,7 @@ class Syslog extends AbstractWriter
      */
     static public function factory($config)
     {
-        return new \self(self::_parseConfig($config));
+        return new self(self::_parseConfig($config));
     }
 
     /**

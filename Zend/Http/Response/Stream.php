@@ -165,7 +165,7 @@ class Stream extends Response
         $version = self::extractVersion($response_str);
         $message = self::extractMessage($response_str);
 
-        return new \self($code, $headers, $stream, $version, $message);
+        return new self($code, $headers, $stream, $version, $message);
     }
 
     /**
