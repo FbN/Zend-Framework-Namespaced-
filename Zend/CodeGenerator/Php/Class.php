@@ -102,7 +102,7 @@ class Class extends AbstractPhp
      */
     public static function fromReflection(\Zend\Reflection\Class $reflectionClass)
     {
-        $class = new \self();
+        $class = new self();
 
         $class->setSourceContent($class->getSourceContent());
         $class->setSourceDirty(false);

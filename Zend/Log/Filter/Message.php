@@ -72,7 +72,7 @@ class Message extends AbstractFilter
             'regexp' => null
         ), $config);
 
-        return new \self(
+        return new self(
             $config['regexp']
         );
     }

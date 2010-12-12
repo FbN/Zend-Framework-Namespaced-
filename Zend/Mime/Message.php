@@ -250,7 +250,7 @@ class Message
         require_once 'Zend/Mime/Decode.php';
         $parts = Decode::splitMessageStruct($message, $boundary, $EOL);
 
-        $res = new \self();
+        $res = new self();
         foreach ($parts as $part) {
             // now we build a new MimePart for the current Message Part:
             $newPart = new Part($part['body']);

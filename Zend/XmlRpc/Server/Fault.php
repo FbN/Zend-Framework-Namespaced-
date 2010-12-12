@@ -108,7 +108,7 @@ class Fault extends \Zend\XmlRpc\Fault
      */
     public static function getInstance(\Exception $e)
     {
-        return new \self($e);
+        return new self($e);
     }
 
     /**

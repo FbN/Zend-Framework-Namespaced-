@@ -121,7 +121,7 @@ class Decorator
     protected function _decorate($result)
     {
         if (is_object($result)) {
-            $result = new \self($result);
+            $result = new self($result);
         }
         return $result;
     }

@@ -362,7 +362,7 @@ class Cookie
         }
 
         if ($name !== '') {
-            $ret = new \self($name, $value, $domain, $expires, $path, $secure);
+            $ret = new self($name, $value, $domain, $expires, $path, $secure);
             $ret->encodeValue = ($encodeValue) ? true : false;
             return $ret;
         } else {

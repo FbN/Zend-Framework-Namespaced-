@@ -280,7 +280,7 @@ class Paginator implements \Countable, \IteratorAggregate
                                    array $prefixPaths = null)
     {
         if ($data instanceof AdapterAggregate) {
-            return new \self($data->getPaginatorAdapter());
+            return new self($data->getPaginatorAdapter());
         } else {
             if ($adapter == self::INTERNAL_ADAPTER) {
                 if (is_array($data)) {
@@ -315,7 +315,7 @@ class Paginator implements \Countable, \IteratorAggregate
 
             $adapterClassName = $pluginLoader->load($adapter);
 
-            return new \self(new $adapterClassName($data));
+            return new self(new $adapterClassName($data));
         }
     }
 

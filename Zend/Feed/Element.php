@@ -211,7 +211,7 @@ class Element implements \ArrayAccess
             } else {
                 $node = $this->_element->ownerDocument->createElement($var);
             }
-            $node = new \self($node);
+            $node = new self($node);
             $node->setParent($this);
             return $node;
         }

@@ -91,7 +91,7 @@ class Module extends AbstractRoute
         $dispatcher = $frontController->getDispatcher();
         $request    = $frontController->getRequest();
 
-        return new \self($defs, $dispatcher, $request);
+        return new self($defs, $dispatcher, $request);
     }
 
     /**

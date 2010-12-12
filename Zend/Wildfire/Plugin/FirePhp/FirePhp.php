@@ -201,7 +201,7 @@ class FirePhp implements Wildfire\Plugin\PluginInterface
                 throw new Wildfire\Exception('Invalid class to third argument. Must be subclass of Zend_Wildfire_Plugin_FirePhp.');
             }
         } else {
-            self::$_instance = new \self();
+            self::$_instance = new self();
         }
 
         return self::$_instance;

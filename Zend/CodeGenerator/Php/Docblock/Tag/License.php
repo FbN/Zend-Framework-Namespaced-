@@ -57,7 +57,7 @@ class License extends Tag
      */
     public static function fromReflection(\Zend\Reflection\Docblock\Tag\Tag $reflectionTagLicense)
     {
-        $returnTag = new \self();
+        $returnTag = new self();
 
         $returnTag->setName('license');
         $returnTag->setUrl($reflectionTagLicense->getUrl());

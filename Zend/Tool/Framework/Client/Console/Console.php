@@ -86,7 +86,7 @@ class Console
      */
     public static function main($options = array())
     {
-        $cliClient = new \self($options);
+        $cliClient = new self($options);
         $cliClient->dispatch();
     }
 

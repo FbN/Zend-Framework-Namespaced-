@@ -183,7 +183,7 @@ class Layout
     public static function startMvc($options = null)
     {
         if (null === self::$_mvcInstance) {
-            self::$_mvcInstance = new \self($options, true);
+            self::$_mvcInstance = new self($options, true);
         }
 
         if (is_string($options)) {

@@ -62,7 +62,7 @@ class Param extends Tag
      */
     public static function fromReflection(\Zend\Reflection\Docblock\Tag\Tag $reflectionTagParam)
     {
-        $paramTag = new \self();
+        $paramTag = new self();
 
         $paramTag->setName('param');
         $paramTag->setDatatype($reflectionTagParam->getType()); // @todo rename

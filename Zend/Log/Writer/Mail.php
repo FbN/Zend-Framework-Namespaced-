@@ -150,7 +150,7 @@ class Mail extends AbstractWriter
     {
         $config = self::_parseConfig($config);
         $mail = self::_constructMailFromConfig($config);
-        $writer = new \self($mail);
+        $writer = new self($mail);
 
         if (isset($config['layout']) || isset($config['layoutOptions'])) {
             $writer->setLayout($config);

@@ -265,7 +265,7 @@ class Fault
      */
     public static function isFault($xml)
     {
-        $fault = new \self();
+        $fault = new self();
         require_once 'Zend/XmlRpc/Exception.php';
         try {
             $isFault = $fault->loadXml($xml);

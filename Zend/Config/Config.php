@@ -114,7 +114,7 @@ class Config implements \Countable, \Iterator
         $this->_data = array();
         foreach ($array as $key => $value) {
             if (is_array($value)) {
-                $this->_data[$key] = new \self($value, $this->_allowModifications);
+                $this->_data[$key] = new self($value, $this->_allowModifications);
             } else {
                 $this->_data[$key] = $value;
             }
@@ -162,7 +162,7 @@ class Config implements \Countable, \Iterator
     {
         if ($this->_allowModifications) {
             if (is_array($value)) {
-                $this->_data[$name] = new \self($value, true);
+                $this->_data[$name] = new self($value, true);
             } else {
                 $this->_data[$name] = $value;
             }

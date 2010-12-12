@@ -231,7 +231,7 @@ class Part implements \RecursiveIterator, PartInterface
         }
         $counter = 1;
         foreach ($parts as $part) {
-            $this->_parts[$counter++] = new \self(array('headers' => $part['header'], 'content' => $part['body']));
+            $this->_parts[$counter++] = new self(array('headers' => $part['header'], 'content' => $part['body']));
         }
     }
 

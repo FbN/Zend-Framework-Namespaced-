@@ -156,7 +156,7 @@ class Decoder
             throw new Exception('Can only decode JSON encoded strings');
         }
 
-        $decoder = new \self($source, $objectDecodeType);
+        $decoder = new self($source, $objectDecodeType);
 
         return $decoder->_decodeValue();
     }

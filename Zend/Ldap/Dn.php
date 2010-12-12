@@ -98,7 +98,7 @@ class Dn implements \ArrayAccess
         } else {
             $dnArray = self::explodeDn((string)$dn);
         }
-        return new \self($dnArray, $caseFold);
+        return new self($dnArray, $caseFold);
     }
 
     /**
@@ -111,7 +111,7 @@ class Dn implements \ArrayAccess
      */
     public static function fromArray(array $dn, $caseFold = null)
     {
-         return new \self($dn, $caseFold);
+         return new self($dn, $caseFold);
     }
 
     /**
@@ -169,7 +169,7 @@ class Dn implements \ArrayAccess
             throw new Exception(null, 'Cannot retrieve parent DN with given $levelUp');
         }
         $newDn = array_slice($this->_dn, $levelUp);
-        return new \self($newDn, $this->_caseFold);
+        return new self($newDn, $this->_caseFold);
     }
 
     /**

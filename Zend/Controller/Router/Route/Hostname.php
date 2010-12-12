@@ -134,7 +134,7 @@ class Hostname extends AbstractRoute
         $reqs   = ($config->reqs instanceof Config\Config) ? $config->reqs->toArray() : array();
         $defs   = ($config->defaults instanceof Config\Config) ? $config->defaults->toArray() : array();
         $scheme = (isset($config->scheme)) ? $config->scheme : null;
-        return new \self($config->route, $defs, $reqs, $scheme);
+        return new self($config->route, $defs, $reqs, $scheme);
     }
 
     /**

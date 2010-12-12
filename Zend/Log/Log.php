@@ -134,7 +134,7 @@ class Log
             throw new Exception('Configuration must be an array or instance of Zend_Config');
         }
 
-        $log = new \self;
+        $log = new self;
 
         if (!is_array(current($config))) {
             $log->addWriter(current($config));

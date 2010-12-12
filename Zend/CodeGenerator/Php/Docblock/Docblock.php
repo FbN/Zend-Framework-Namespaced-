@@ -71,7 +71,7 @@ class Docblock extends \Zend\CodeGenerator\Php\AbstractPhp
      */
     public static function fromReflection(\Zend\Reflection\Docblock\Docblock $reflectionDocblock)
     {
-        $docblock = new \self();
+        $docblock = new self();
 
         $docblock->setSourceContent($reflectionDocblock->getContents());
         $docblock->setSourceDirty(false);

@@ -76,7 +76,7 @@ class Method extends Member\AbstractMember
      */
     public static function fromReflection(\Zend\Reflection\Method $reflectionMethod)
     {
-        $method = new \self();
+        $method = new self();
 
         $method->setSourceContent($reflectionMethod->getContents(false));
         $method->setSourceDirty(false);

@@ -97,7 +97,7 @@ class Firebug extends AbstractWriter
      */
     static public function factory($config)
     {
-        return new \self();
+        return new self();
     }
 
     /**

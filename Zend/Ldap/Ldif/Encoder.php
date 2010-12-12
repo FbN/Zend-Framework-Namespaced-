@@ -71,7 +71,7 @@ class Encoder
      */
     public static function decode($string)
     {
-        $encoder = new \self(array());
+        $encoder = new self(array());
         return $encoder->_decode($string);
     }
 
@@ -151,7 +151,7 @@ class Encoder
      */
     public static function encode($value, array $options = array())
     {
-        $encoder = new \self($options);
+        $encoder = new self($options);
         return $encoder->_encode($value);
     }
 

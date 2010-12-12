@@ -197,7 +197,7 @@ class File extends Part
             throw new Mail\Exception('part not found');
         }
 
-        return new \self(array('file' => $this->_fh, 'startPos' => $this->_partPos[$num][0],
+        return new self(array('file' => $this->_fh, 'startPos' => $this->_partPos[$num][0],
                               'endPos' => $this->_partPos[$num][1]));
     }
 }

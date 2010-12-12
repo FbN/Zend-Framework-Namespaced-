@@ -143,7 +143,7 @@ class Array extends Element
      */
     public function makeClone(actory\ElementFactory $factory, array &$processed, $mode)
     {
-        $newArray = new \self();
+        $newArray = new self();
 
         foreach ($this->items as $key => $value) {
             $newArray->items[$key] = $value->makeClone($factory, $processed, $mode);

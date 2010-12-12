@@ -257,7 +257,7 @@ class DefaultValue extends \Zend\CodeGenerator\Php\AbstractPhp
                     );
                 foreach ($rii as $curKey => $curValue) {
                     if (!$curValue instanceof DefaultValue) {
-                        $curValue = new \self(array('value' => $curValue));
+                        $curValue = new self(array('value' => $curValue));
                         $rii->getSubIterator()->offsetSet($curKey, $curValue);
                     }
                     $curValue->setArrayDepth($rii->getDepth());

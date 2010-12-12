@@ -50,7 +50,7 @@ class Chain extends AbstractRoute
     public static function getInstance(Config\Config $config)
     {
         $defs = ($config->defaults instanceof Config\Config) ? $config->defaults->toArray() : array();
-        return new \self($config->route, $defs);
+        return new self($config->route, $defs);
     }
 
     /**

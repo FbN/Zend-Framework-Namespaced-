@@ -113,7 +113,7 @@ class HttpHeaders extends Controller\Plugin\AbstractPlugin implements ChannelInt
                 throw new Wildfire\Exception('Invalid class to third argument. Must be subclass of Zend_Wildfire_Channel_HttpHeaders.');
             }
         } else {
-            self::$_instance = new \self();
+            self::$_instance = new self();
         }
 
         return self::$_instance;

@@ -92,7 +92,7 @@ class Db extends AbstractWriter
             $config['columnMap'] = $config['columnmap'];
         }
 
-        return new \self(
+        return new self(
             $config['db'],
             $config['table'],
             $config['columnMap']

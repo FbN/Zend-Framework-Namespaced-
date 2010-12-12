@@ -256,7 +256,7 @@ class Node extends AbstractNode implements \Iterator, \RecursiveIterator
             require_once 'Zend/Ldap/Exception.php';
             throw new Ldap\Exception(null, '$dn is of a wrong data type.');
         }
-        $new = new \self($dn, array(), false, null);
+        $new = new self($dn, array(), false, null);
         $new->_ensureRdnAttributeValues();
         $new->setAttribute('objectClass', $objectClass);
         return $new;
@@ -287,7 +287,7 @@ class Node extends AbstractNode implements \Iterator, \RecursiveIterator
         if ($data === null) {
             return null;
         }
-        $entry = new \self($dn, $data, true, $ldap);
+        $entry = new self($dn, $data, true, $ldap);
         return $entry;
     }
 
@@ -320,7 +320,7 @@ class Node extends AbstractNode implements \Iterator, \RecursiveIterator
             throw new Ldap\Exception(null, '\'dn\' key is of a wrong data type.');
         }
         $fromDataSource = ($fromDataSource === true) ? true : false;
-        $new = new \self($dn, $data, $fromDataSource, null);
+        $new = new self($dn, $data, $fromDataSource, null);
         $new->_ensureRdnAttributeValues();
         return $new;
     }

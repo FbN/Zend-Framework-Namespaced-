@@ -147,7 +147,7 @@ class File extends AbstractPhp
      */
     public static function fromReflection(Reflection\File $reflectionFile)
     {
-        $file = new \self();
+        $file = new self();
 
         $file->setSourceContent($reflectionFile->getContents());
         $file->setSourceDirty(false);

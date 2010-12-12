@@ -199,7 +199,7 @@ class Dictionary extends Element
             }
         }
 
-        $newDictionary = new \self();
+        $newDictionary = new self();
         foreach ($this->_items as $key => $value) {
             $newDictionary->_items[$key] = $value->makeClone($factory, $processed, $mode);
         }

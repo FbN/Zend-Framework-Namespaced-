@@ -4845,7 +4845,7 @@ class Date extends DateObject
             $parsed['year'] = 1971;
         }
 
-        $date      = new \self($parsed, null, $locale);
+        $date      = new self($parsed, null, $locale);
         $timestamp = $date->mktime($parsed['hour'], $parsed['minute'], $parsed['second'],
                                    $parsed['month'], $parsed['day'], $parsed['year']);
 

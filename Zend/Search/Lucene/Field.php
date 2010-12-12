@@ -148,7 +148,7 @@ class Field
      */
     public static function keyword($name, $value, $encoding = '')
     {
-        return new \self($name, $value, $encoding, true, true, false);
+        return new self($name, $value, $encoding, true, true, false);
     }
 
 
@@ -163,7 +163,7 @@ class Field
      */
     public static function unIndexed($name, $value, $encoding = '')
     {
-        return new \self($name, $value, $encoding, true, false, false);
+        return new self($name, $value, $encoding, true, false, false);
     }
 
 
@@ -178,7 +178,7 @@ class Field
      */
     public static function binary($name, $value)
     {
-        return new \self($name, $value, '', true, false, false, true);
+        return new self($name, $value, '', true, false, false, true);
     }
 
     /**
@@ -193,7 +193,7 @@ class Field
      */
     public static function text($name, $value, $encoding = '')
     {
-        return new \self($name, $value, $encoding, true, true, true);
+        return new self($name, $value, $encoding, true, true, true);
     }
 
 
@@ -208,7 +208,7 @@ class Field
      */
     public static function unStored($name, $value, $encoding = '')
     {
-        return new \self($name, $value, $encoding, false, true, true);
+        return new self($name, $value, $encoding, false, true, true);
     }
 
     /**

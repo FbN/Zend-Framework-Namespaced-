@@ -364,7 +364,7 @@ class CookieJar implements \Countable, \IteratorAggregate
      */
     public static function fromResponse(Response\Response $response, $ref_uri)
     {
-        $jar = new \self();
+        $jar = new self();
         $jar->addCookiesFromResponse($response, $ref_uri);
         return $jar;
     }
